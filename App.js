@@ -6,10 +6,10 @@ import CourseRoutes from "./Kanbas/Courses/routes.js";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import AssignmentRoutes from './Kanbas/Assignments/routes.js';
 import mongoose from "mongoose";
-import UserRoutes from "./Users/routes.js";
+import UserRoutes from './Kanbas/Users/routes.js';
 //const express = require('express')
 
-mongoose.connect("mongodb+srv://Cluster42453:YFpCe3NrXXNu@cluster42453.swjdzbr.mongodb.net");
+mongoose.connect("mongodb+srv://Cluster42453:YFpCe3NrXXNu@cluster42453.swjdzbr.mongodb.net/kanbas");
 const app = express()
 app.use(cors());
 app.use(express.json());
